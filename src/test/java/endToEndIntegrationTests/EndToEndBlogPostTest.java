@@ -42,6 +42,5 @@ public class EndToEndBlogPostTest {
         //Assert.assertEquals(deleteBlogPostResponse.getStatusCode(),200);
 
         blogService.getPostExpectingError(id).assertError(404,"RESOURCE_NOT_FOUND");
-
     }
 }

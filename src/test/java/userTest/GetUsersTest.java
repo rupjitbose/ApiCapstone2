@@ -27,7 +27,6 @@ public class GetUsersTest {
     Assert.assertEquals(getUserResponse.getStatusCode(),200);
     Assert.assertEquals(getUserResponse.getLimit(),10);
     Assert.assertEquals(getUserResponse.getData().size(),10);
-
     }
 
     @Test
@@ -40,7 +39,6 @@ public class GetUsersTest {
         //assert
         Assert.assertEquals(getUserResponse.getStatusCode(),200);
         Assert.assertEquals(getUserResponse.getData().size(),getUserResponse.getTotal());
-
     }
 
 }
