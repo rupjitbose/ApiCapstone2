@@ -22,25 +22,12 @@ public class EndToEndBlogPostTest {
 
         //arrange
         CreateBlogPostResquestBody createBlogPostResquestBody=new CreateBlogPostResquestBody.Builder().build();
-        //act
         CreateBlogPostResponse createBlogPostResponse= blogService.createBlog(createBlogPostResquestBody);
-        //assert
-        //createBlogPostResponse.assertBlogPost(createBlogPostResquestBody);
-
         String id=createBlogPostResponse.getId();
-
-        //act
         GetPostResponse getPostResponse=blogService.getPostById(id);
-        //assert
-        //Assert.assertEquals(getPostResponse.getId(),id);
-        //Assert.assertEquals(getPostResponse.getStatusCode(),200);
-
         //act
         DeleteBlogPostResponse deleteBlogPostResponse=blogService.deletePostById(id);
         //assert
-        //Assert.assertEquals(deleteBlogPostResponse.getId(),id);
-        //Assert.assertEquals(deleteBlogPostResponse.getStatusCode(),200);
-
         blogService.getPostExpectingError(id).assertError(404,"RESOURCE_NOT_FOUND");
     }
 }

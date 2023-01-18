@@ -18,6 +18,7 @@ public class CreateUserSuccessResponse {
     private String updatedDate;
     private String email;
     private String registerDate;
+
     public void assertUserInfo(CreateUserRequestBody cuReqBody) {
         assertEquals(this.getStatusCode(),200);
         assertNotNull(this.getId());
