@@ -6,6 +6,9 @@ import org.testng.annotations.Test;
 import users.UserService;
 import users.create.CreateUserRequestBody;
 import users.create.response.CreateUserErrorResponse;
+import users.create.response.CreateUserSuccessResponse;
+
+import java.io.IOException;
 
 public class CreateUserNegativeTest {
 
@@ -17,11 +20,15 @@ public class CreateUserNegativeTest {
     }
 
     @Test
-    public void shouldThrowErrorIfAnUserIsCreatedWithExistingEmail(){
+    public void shouldThrowErrorIfAnUserIsCreatedWithExistingEmail() throws IOException {
+
+
         //arrange
-        CreateUserRequestBody cuReqBody=new CreateUserRequestBody.Builder().email("379d3ab8-df77-49b2-8c72-4c81a65b0669@gmail.com").build();
+        CreateUserRequestBody createUserRequestBody=new CreateUserRequestBody.Builder().build();
+
+        userService.createUser(createUserRequestBody);
         //act
-        CreateUserErrorResponse createUserErrorResponse = userService.userErrorResponse(cuReqBody);
+        CreateUserErrorResponse createUserErrorResponse = userService.userErrorResponse(createUserRequestBody);
         //assert
         Assert.assertEquals(createUserErrorResponse.getStatusCode(),400);
         Assert.assertEquals(createUserErrorResponse.getData().getEmail(),"Email already used");

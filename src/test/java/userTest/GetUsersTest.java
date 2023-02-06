@@ -6,7 +6,8 @@ import org.testng.annotations.Test;
 import users.UserService;
 import users.get.GetUserResponse;
 
-import static io.restassured.RestAssured.given;
+import java.io.IOException;
+
 
 public class GetUsersTest {
 
@@ -17,7 +18,7 @@ public class GetUsersTest {
         userService=new UserService();
     }
 @Test
-    public void shouldGetListOfUsersOfGivenLimit(){
+    public void shouldGetListOfUsersOfGivenLimit() throws IOException {
     //arrange
     String queryParamName="limit";
     int queryParamValue=10;
@@ -30,7 +31,7 @@ public class GetUsersTest {
     }
 
     @Test
-    public void shouldGetListOfUsersUnderTheAccount(){
+    public void shouldGetListOfUsersUnderTheAccount() throws IOException {
         //arrange
         String queryParamName="created";
         int queryParamValue=1;

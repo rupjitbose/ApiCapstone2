@@ -9,6 +9,8 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import java.io.IOException;
+
 public class EndToEndBlogPostTest {
     private BlogService blogService;
 
@@ -18,7 +20,7 @@ public class EndToEndBlogPostTest {
     }
 
     @Test
-    public void shouldCreateGetAndDeleteBlogPost(){
+    public void shouldCreateGetAndDeleteBlogPost() throws IOException {
 
         //arrange
         CreateBlogPostResquestBody createBlogPostResquestBody=new CreateBlogPostResquestBody.Builder().build();

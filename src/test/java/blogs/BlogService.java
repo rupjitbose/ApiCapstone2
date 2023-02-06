@@ -8,28 +8,30 @@ import io.restassured.response.Response;
 import users.UserClient;
 import users.get.GetUserResponse;
 
+import java.io.IOException;
+
 
 public class BlogService {
-    public CreateBlogPostResponse createBlog(CreateBlogPostResquestBody body) {
+    public CreateBlogPostResponse createBlog(CreateBlogPostResquestBody body) throws IOException {
         Response response=new BlogClient().create(body);
         CreateBlogPostResponse createBlogPostResponse = response.as(CreateBlogPostResponse.class);
         createBlogPostResponse.setStatusCode(response.statusCode());
         return createBlogPostResponse;
     }
-    public GetPostResponse getPostById(String id) {
+    public GetPostResponse getPostById(String id) throws IOException {
         Response response = new BlogClient().getByID(id);
         GetPostResponse getPostResponse=response.as(GetPostResponse.class);
         getPostResponse.setStatusCode(response.statusCode());
         return getPostResponse;
     }
 
-    public GetPostErrorResponse getPostExpectingError(String id) {
+    public GetPostErrorResponse getPostExpectingError(String id) throws IOException {
         Response response = new BlogClient().getByID(id);
         GetPostErrorResponse getPostErrorResponse=response.as(GetPostErrorResponse.class);
         getPostErrorResponse.setStatusCode(response.statusCode());
         return getPostErrorResponse;
     }
-    public DeleteBlogPostResponse deletePostById(String id) {
+    public DeleteBlogPostResponse deletePostById(String id) throws IOException {
         Response response = new BlogClient().deleteByID(id);
         DeleteBlogPostResponse deleteBlogPostResponse=response.as(DeleteBlogPostResponse.class);
         deleteBlogPostResponse.setStatusCode(response.statusCode());

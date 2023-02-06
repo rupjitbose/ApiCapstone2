@@ -8,6 +8,8 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import java.io.IOException;
+
 public class DeleteBlogPost {
     private BlogService blogService;
 
@@ -17,7 +19,7 @@ public class DeleteBlogPost {
     }
 
     @Test
-    public void shouldDeletePostById(){
+    public void shouldDeletePostById() throws IOException {
         //arrange
         CreateBlogPostResquestBody createBlogPostResquestBody=new CreateBlogPostResquestBody.Builder().build();
         String id=blogService.createBlog(createBlogPostResquestBody).getId();

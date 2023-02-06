@@ -4,23 +4,23 @@
 Access-Control-Allow-Origin: *
 Cache-Control: private
 .Content-Type: application/json; charset=utf-8
-*Etag: W/"167-FMBmFv3T5MZjqT0Q8UqvMKHy80E"
-$Function-Execution-Id: i74ajma53moa
+*Etag: W/"167-Vt+u0dlm/M4LnT4lp+Y3OnMkq7k"
+$Function-Execution-Id: szurpsyq9ij1
 Server: Google Frontend
 ,Strict-Transport-Security: max-age=31556926
-<X-Cloud-Trace-Context: d29e3ee87fd587789e92f021e699a884;o=1
+8X-Cloud-Trace-Context: 7860743736a64c8d1ba6245e98c705bc
 X-Country-Code: IN
 Accept-Ranges: bytes
-$Date: Wed, 18 Jan 2023 06:24:19 GMT
- X-Served-By: cache-maa10245-MAA
+$Date: Mon, 06 Feb 2023 11:44:34 GMT
+ X-Served-By: cache-maa10228-MAA
 X-Cache: MISS
 X-Cache-Hits: 0
-&X-Timer: S1674023059.058876,VS0,VE432
+&X-Timer: S1675683874.063452,VS0,VE389
 FVary: cookie,need-authorization, x-fh-requested-host, accept-encoding
 Halt-svc: h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
 
 {
-&    "id": "63c79093b688c21447177ecf",
+&    "id": "63e0e822c2fbb95bb2903591",
 k    "image": "https: //t4.ftcdn.net/jpg/03/03/62/45/240_F_303624505_u0bFT1Rnoj8CMUSs8wMCwoKlnWlh5Jiq.jpg",
     "likes": 0,
     "link": "",
@@ -28,34 +28,420 @@
         "#new"
     ],
      "text": "this is new post",
-/    "publishDate": "2023-01-18T06:24:19.359Z",
-/    "updatedDate": "2023-01-18T06:24:19.359Z",
+/    "publishDate": "2023-02-06T11:44:34.309Z",
+/    "updatedDate": "2023-02-06T11:44:34.309Z",
     "owner": {
 *        "id": "63be48b5d1eb2dba0c55e2b2",
         "firstName": "Rupjit",
         "lastName": "bose"
     }
 }
-{
-&    "id": "63c79093b688c21447177ecf",
-k    "image": "https: //t4.ftcdn.net/jpg/03/03/62/45/240_F_303624505_u0bFT1Rnoj8CMUSs8wMCwoKlnWlh5Jiq.jpg",
-    "likes": 0,
-    "link": "",
-    "tags": [
-        "#new"
-    ],
-     "text": "this is new post",
-/    "publishDate": "2023-01-18T06:24:19.359Z",
-/    "updatedDate": "2023-01-18T06:24:19.359Z",
-    "owner": {
-*        "id": "63be48b5d1eb2dba0c55e2b2",
-        "firstName": "Rupjit",
-        "lastName": "bose"
-    }
-}
-{
-%    "id": "63c79093b688c21447177ecf"
-}
-{
-"    "error": "RESOURCE_NOT_FOUND"
-}
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 359
+Access-Control-Allow-Origin: *
+Cache-Control: private
+.Content-Type: application/json; charset=utf-8
+*Etag: W/"167-RpA6O2uMf+6AwSWOhVYtvEkmnFA"
+$Function-Execution-Id: szurftjk2j33
+Server: Google Frontend
+,Strict-Transport-Security: max-age=31556926
+8X-Cloud-Trace-Context: 2c7ac57069d06786d9d378559547b4f4
+X-Country-Code: IN
+Accept-Ranges: bytes
+$Date: Mon, 06 Feb 2023 11:44:35 GMT
+ X-Served-By: cache-maa10226-MAA
+X-Cache: MISS
+X-Cache-Hits: 0
+&X-Timer: S1675683875.778666,VS0,VE371
+FVary: cookie,need-authorization, x-fh-requested-host, accept-encoding
+Halt-svc: h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+
+{
+&    "id": "63e0e823c2fbb97eec903597",
+k    "image": "https: //t4.ftcdn.net/jpg/03/03/62/45/240_F_303624505_u0bFT1Rnoj8CMUSs8wMCwoKlnWlh5Jiq.jpg",
+    "likes": 0,
+    "link": "",
+    "tags": [
+        "#new"
+    ],
+     "text": "this is new post",
+/    "publishDate": "2023-02-06T11:44:35.015Z",
+/    "updatedDate": "2023-02-06T11:44:35.015Z",
+    "owner": {
+*        "id": "63be48b5d1eb2dba0c55e2b2",
+        "firstName": "Rupjit",
+        "lastName": "bose"
+    }
+}
+{
+%    "id": "63e0e823c2fbb97eec903597"
+}
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 359
+Access-Control-Allow-Origin: *
+Cache-Control: private
+.Content-Type: application/json; charset=utf-8
+*Etag: W/"167-dKnluoBM3iTnbfh1qu2VUcr4I4o"
+$Function-Execution-Id: szur2iiym5rf
+Server: Google Frontend
+,Strict-Transport-Security: max-age=31556926
+8X-Cloud-Trace-Context: 44ae0002d3128cb6a7c851d841600790
+X-Country-Code: IN
+Accept-Ranges: bytes
+$Date: Mon, 06 Feb 2023 11:44:36 GMT
+ X-Served-By: cache-maa10232-MAA
+X-Cache: MISS
+X-Cache-Hits: 0
+&X-Timer: S1675683876.651599,VS0,VE384
+FVary: cookie,need-authorization, x-fh-requested-host, accept-encoding
+Halt-svc: h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+
+{
+&    "id": "63e0e823c2fbb9fca69035a1",
+k    "image": "https: //t4.ftcdn.net/jpg/03/03/62/45/240_F_303624505_u0bFT1Rnoj8CMUSs8wMCwoKlnWlh5Jiq.jpg",
+    "likes": 0,
+    "link": "",
+    "tags": [
+        "#new"
+    ],
+     "text": "this is new post",
+/    "publishDate": "2023-02-06T11:44:35.884Z",
+/    "updatedDate": "2023-02-06T11:44:35.884Z",
+    "owner": {
+*        "id": "63be48b5d1eb2dba0c55e2b2",
+        "firstName": "Rupjit",
+        "lastName": "bose"
+    }
+}
+{
+&    "id": "63e0e823c2fbb9fca69035a1",
+k    "image": "https: //t4.ftcdn.net/jpg/03/03/62/45/240_F_303624505_u0bFT1Rnoj8CMUSs8wMCwoKlnWlh5Jiq.jpg",
+    "likes": 0,
+    "link": "",
+    "tags": [
+        "#new"
+    ],
+     "text": "this is new post",
+/    "publishDate": "2023-02-06T11:44:35.884Z",
+/    "updatedDate": "2023-02-06T11:44:35.884Z",
+    "owner": {
+*        "id": "63be48b5d1eb2dba0c55e2b2",
+        "firstName": "Rupjit",
+        "lastName": "bose"
+    }
+}
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 359
+Access-Control-Allow-Origin: *
+Cache-Control: private
+.Content-Type: application/json; charset=utf-8
+*Etag: W/"167-JBAlWALLypDYwwy4OCVokdHKWCM"
+$Function-Execution-Id: szurshvx4gly
+Server: Google Frontend
+,Strict-Transport-Security: max-age=31556926
+8X-Cloud-Trace-Context: c074b8659f397e86181f9814000c4a33
+X-Country-Code: IN
+Accept-Ranges: bytes
+$Date: Mon, 06 Feb 2023 11:44:37 GMT
+ X-Served-By: cache-maa10245-MAA
+X-Cache: MISS
+X-Cache-Hits: 0
+&X-Timer: S1675683877.712439,VS0,VE327
+FVary: cookie,need-authorization, x-fh-requested-host, accept-encoding
+Halt-svc: h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+
+{
+&    "id": "63e0e824c2fbb96bec9035b5",
+k    "image": "https: //t4.ftcdn.net/jpg/03/03/62/45/240_F_303624505_u0bFT1Rnoj8CMUSs8wMCwoKlnWlh5Jiq.jpg",
+    "likes": 0,
+    "link": "",
+    "tags": [
+        "#new"
+    ],
+     "text": "this is new post",
+/    "publishDate": "2023-02-06T11:44:36.908Z",
+/    "updatedDate": "2023-02-06T11:44:36.908Z",
+    "owner": {
+*        "id": "63be48b5d1eb2dba0c55e2b2",
+        "firstName": "Rupjit",
+        "lastName": "bose"
+    }
+}
+{
+&    "id": "63e0e824c2fbb96bec9035b5",
+k    "image": "https: //t4.ftcdn.net/jpg/03/03/62/45/240_F_303624505_u0bFT1Rnoj8CMUSs8wMCwoKlnWlh5Jiq.jpg",
+    "likes": 0,
+    "link": "",
+    "tags": [
+        "#new"
+    ],
+     "text": "this is new post",
+/    "publishDate": "2023-02-06T11:44:36.908Z",
+/    "updatedDate": "2023-02-06T11:44:36.908Z",
+    "owner": {
+*        "id": "63be48b5d1eb2dba0c55e2b2",
+        "firstName": "Rupjit",
+        "lastName": "bose"
+    }
+}
+{
+%    "id": "63e0e824c2fbb96bec9035b5"
+}
+{
+"    "error": "RESOURCE_NOT_FOUND"
+}
+
+	{
+
+	&    "id": "63e0e826c2fbb908d59035c6",
+
+	    "firstName": "rupjit",
+
+	    "lastName": "bose",
+
+	?    "email": "e367946c-59ad-4b67-b83d-d6274d35da0f@gmail.com",
+
+	0    "registerDate": "2023-02-06T11:44:38.714Z",
+
+	.    "updatedDate": "2023-02-06T11:44:38.714Z"
+
+	}
+
+	{
+
+	    "error": "BODY_NOT_VALID",
+
+	    "data": {
+
+	&        "email": "Email already used"
+
+	    }
+
+	}
+{
+&    "id": "63e0e827c2fbb9b2619035cc",
+    "firstName": "rupjit",
+    "lastName": "bose",
+?    "email": "f947809d-9fbe-4030-b3c7-8c751ad1af8b@gmail.com",
+0    "registerDate": "2023-02-06T11:44:39.517Z",
+.    "updatedDate": "2023-02-06T11:44:39.517Z"
+}
+{
+    "data": [
+
+        {
+.            "id": "60d0fe4f5311236168a109ca",
+            "title": "ms",
+!            "firstName": "Sara",
+$            "lastName": "Andersen",
+J            "picture": "https://randomuser.me/api/portraits/women/58.jpg"
+        },
+
+        {
+.            "id": "60d0fe4f5311236168a109cb",
+            "title": "miss",
+"            "firstName": "Edita",
+%            "lastName": "Vestering",
+N            "picture": "https://randomuser.me/api/portraits/med/women/89.jpg"
+        },
+
+        {
+.            "id": "60d0fe4f5311236168a109cc",
+            "title": "ms",
+"            "firstName": "Adina",
+#            "lastName": "Barbosa",
+N            "picture": "https://randomuser.me/api/portraits/med/women/28.jpg"
+        },
+
+        {
+.            "id": "60d0fe4f5311236168a109cd",
+            "title": "mr",
+$            "firstName": "Roberto",
+             "lastName": "Vega",
+L            "picture": "https://randomuser.me/api/portraits/med/men/25.jpg"
+        },
+
+        {
+.            "id": "60d0fe4f5311236168a109ce",
+            "title": "mr",
+!            "firstName": "Rudi",
+"            "lastName": "Droste",
+L            "picture": "https://randomuser.me/api/portraits/med/men/83.jpg"
+        },
+
+        {
+.            "id": "60d0fe4f5311236168a109cf",
+            "title": "mrs",
+%            "firstName": "Carolina",
+             "lastName": "Lima",
+M            "picture": "https://randomuser.me/api/portraits/med/women/5.jpg"
+        },
+
+        {
+.            "id": "60d0fe4f5311236168a109d0",
+            "title": "mr",
+!            "firstName": "Emre",
+$            "lastName": "Asikoglu",
+L            "picture": "https://randomuser.me/api/portraits/med/men/23.jpg"
+        },
+
+        {
+.            "id": "60d0fe4f5311236168a109d1",
+            "title": "mr",
+!            "firstName": "Kent",
+"            "lastName": "Brewer",
+L            "picture": "https://randomuser.me/api/portraits/med/men/52.jpg"
+        },
+
+        {
+.            "id": "60d0fe4f5311236168a109d2",
+            "title": "mr",
+!            "firstName": "Evan",
+#            "lastName": "Carlson",
+L            "picture": "https://randomuser.me/api/portraits/med/men/80.jpg"
+        },
+
+        {
+.            "id": "60d0fe4f5311236168a109d3",
+            "title": "mr",
++            "firstName": "Friedrich-Karl",
+!            "lastName": "Brand",
+K            "picture": "https://randomuser.me/api/portraits/med/men/7.jpg"
+
+        }
+    ],
+    "total": 143,
+    "page": 0,
+    "limit": 10
+}
+{
+    "data": [
+
+        {
+.            "id": "63b7f9890210e85e4823535e",
+"            "firstName": "Mayur",
+             "lastName": "Kumar"
+        },
+
+        {
+.            "id": "63b8158b79a0b2da13d10566",
+#            "firstName": "Rupjit",
+             "lastName": "Kumar"
+        },
+
+        {
+.            "id": "63bada16f6314d4a2f934430",
+#            "firstName": "Rupjit",
+             "lastName": "Kumar"
+        },
+
+        {
+.            "id": "63bbbb43b7d7b38e7e5a401c",
+!            "firstName": "Rupa",
+             "lastName": "Kumar"
+        },
+
+        {
+.            "id": "63bd098f7dc863430aaa08f5",
+#            "firstName": "Rupjit",
+             "lastName": "Kumar"
+        },
+
+        {
+.            "id": "63bd0c017dc8634221aa0ab4",
+#            "firstName": "Rupjit",
+            "lastName": "bose"
+        },
+
+        {
+.            "id": "63bd447c7dc86341a1aa433b",
+#            "firstName": "Rupjit",
+            "lastName": "bose"
+        },
+
+        {
+.            "id": "63bd8f8a7dc8630537aa8b6a",
+#            "firstName": "rupjit",
+            "lastName": "bose"
+        },
+
+        {
+.            "id": "63bd9dd05dcfe70a9e03cd23",
+#            "firstName": "rupjit",
+            "lastName": "bose"
+        },
+
+        {
+.            "id": "63bda0ed959a5682394afa08",
+#            "firstName": "rupjit",
+            "lastName": "bose"
+        },
+
+        {
+.            "id": "63be48b5d1eb2dba0c55e2b2",
+#            "firstName": "Rupjit",
+            "lastName": "bose"
+        },
+
+        {
+.            "id": "63bfaee654edcee2d9d3ddec",
+#            "firstName": "rupjit",
+            "lastName": "bose"
+        },
+
+        {
+.            "id": "63c50307f916834dfb4c5428",
+"            "firstName": "Rupam",
+             "lastName": "Kumar"
+        },
+
+        {
+.            "id": "63cd0f392c5a5785f14a2de7",
+"            "firstName": "RAVAN",
+%            "lastName": "DEMON KING"
+        },
+
+        {
+.            "id": "63cd18bf2c5a5720054a3309",
+             "firstName": "RAM",
+%            "lastName": "HUMAN KING"
+        },
+
+        {
+.            "id": "63d38efdb3d198b0d6b5f7b8",
+!            "firstName": "RAMk",
+'            "lastName": "HUMAN KING s"
+        },
+
+        {
+.            "id": "63d38f2cb3d198662bb5f801",
+!            "firstName": "RAMk",
+'            "lastName": "HUMAN KING s"
+        },
+
+        {
+.            "id": "63d3a83ab3d1986b4db61263",
+#            "firstName": "rupjit",
+            "lastName": "bose"
+        },
+
+        {
+.            "id": "63d7769a76402842ca72d969",
+#            "firstName": "rupjit",
+            "lastName": "bose"
+        },
+
+        {
+.            "id": "63d7af42dd5bbc6e69c963bd",
+#            "firstName": "Rupjit",
+            "lastName": "bose"
+
+        }
+    ],
+    "total": 44,
+    "page": 0,
+    "limit": 20
+}

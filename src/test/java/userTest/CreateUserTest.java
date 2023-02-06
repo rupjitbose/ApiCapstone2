@@ -6,7 +6,7 @@ import users.UserService;
 import users.create.CreateUserRequestBody;
 import users.create.response.CreateUserSuccessResponse;
 
-import static io.restassured.RestAssured.given;
+import java.io.IOException;
 
 public class CreateUserTest {
 
@@ -17,7 +17,7 @@ public class CreateUserTest {
         userService=new UserService();
     }
     @Test
-    public void shouldCreateAnUser(){
+    public void shouldCreateAnUser() throws IOException {
         //arrange
         CreateUserRequestBody cuReqBody=new CreateUserRequestBody.Builder().build();
         //act

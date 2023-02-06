@@ -8,6 +8,8 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import java.io.IOException;
+
 public class GetBlogPostTest {
     private BlogService blogService;
 
@@ -16,7 +18,7 @@ public class GetBlogPostTest {
         blogService=new BlogService();
     }
     @Test
-    public void shouldGetPostById(){
+    public void shouldGetPostById() throws IOException {
         //arrange
         CreateBlogPostResquestBody createBlogPostResquestBody=new CreateBlogPostResquestBody.Builder().build();
         String id=blogService.createBlog(createBlogPostResquestBody).getId();

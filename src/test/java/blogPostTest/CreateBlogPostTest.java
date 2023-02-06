@@ -7,6 +7,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import users.UserService;
 
+import java.io.IOException;
+
 public class CreateBlogPostTest {
 
     private BlogService blogService;
@@ -17,7 +19,7 @@ public class CreateBlogPostTest {
     }
 
     @Test
-    public void shouldCreateBlogPost(){
+    public void shouldCreateBlogPost() throws IOException {
 
         //arrange
         CreateBlogPostResquestBody createBlogPostResquestBody=new CreateBlogPostResquestBody.Builder().build();
