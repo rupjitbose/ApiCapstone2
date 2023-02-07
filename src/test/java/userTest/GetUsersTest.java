@@ -39,7 +39,7 @@ public class GetUsersTest {
         GetUserResponse getUserResponse=userService.getAllUser(queryParamName, queryParamValue);
         //assert
         Assert.assertEquals(getUserResponse.getStatusCode(),200);
-       // Assert.assertEquals(getUserResponse.getData().size(),getUserResponse.getTotal());
+        Assert.assertEquals(getUserResponse.getData().size(),getUserResponse.getTotal());
     }
 
 }
