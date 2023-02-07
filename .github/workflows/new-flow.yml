@@ -9,7 +9,7 @@ name: new workflow
 
 on:
   schedule:
-    - cron: '58 * * * *'
+    - cron: '35 * * * *'
 
 jobs:
   build:
