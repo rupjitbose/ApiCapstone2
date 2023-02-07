@@ -6,7 +6,7 @@ import java.util.Properties;
 
 public class DataProperties {
 
-    Properties properties;
+    private Properties properties;
     public String getProperty(String key) throws IOException {
         properties=new Properties();
         FileInputStream fis=new FileInputStream(System.getProperty("user.dir")+"/src/main/data.properties");
