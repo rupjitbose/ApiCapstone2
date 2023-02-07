@@ -21,7 +21,7 @@ public class BlogClient {
                 .contentType(ContentType.JSON)
                 .body(body)
                 .filter(new AllureRestAssured())
-                .when().post("https://dummyapi.io/data/v1/post/create");
+                .when().post(dataProperties.getProperty("base-uri")+"/post/create");
         response.then().log().all();
         return response;
     }
@@ -31,7 +31,7 @@ public class BlogClient {
                 .header("app-id", dataProperties.getProperty("app-id"))
                 .pathParam("id", id)
                 .filter(new AllureRestAssured())
-                .when().get("https://dummyapi.io/data/v1/post/{id}");
+                .when().get(dataProperties.getProperty("base-uri")+"/post/{id}");
         response.then().log().body();
         return response;
     }
@@ -42,7 +42,7 @@ public class BlogClient {
                 .header("app-id", dataProperties.getProperty("app-id"))
                 .pathParam("id", id)
                 .filter(new AllureRestAssured())
-                .when().delete("https://dummyapi.io/data/v1/post/{id}");
+                .when().delete(dataProperties.getProperty("base-uri")+"/post/{id}");
         response.then().log().body();
         return response;
     }

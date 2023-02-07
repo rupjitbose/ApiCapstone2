@@ -11,6 +11,7 @@ import java.io.IOException;
 import static io.restassured.RestAssured.given;
 
 public class UserClient {
+
     DataProperties dataProperties=new DataProperties();
 
     public Response create(CreateUserRequestBody body) throws IOException {
@@ -19,7 +20,7 @@ public class UserClient {
                 .contentType(ContentType.JSON)
                 .body(body)
                 .filter(new AllureRestAssured())
-                .when().post("https://dummyapi.io/data/v1/user/create");
+                .when().post(dataProperties.getProperty("base-uri")+"/user/create");
         response.then().log().body();
         return response;
     }
@@ -29,7 +30,7 @@ public class UserClient {
                 .header("app-id", dataProperties.getProperty("app-id"))
                 .queryParam(queryParamName, queryParamValue)
                 .filter(new AllureRestAssured())
-                .when().get("https://dummyapi.io/data/v1/user");
+                .when().get(dataProperties.getProperty("base-uri")+"/user");
         response.then().log().body();
         return response;
     }
