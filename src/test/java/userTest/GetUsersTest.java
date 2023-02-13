@@ -2,22 +2,24 @@ package userTest;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeGroups;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 import users.UserService;
 import users.get.GetUserResponse;
-
 import java.io.IOException;
 
 
 public class GetUsersTest {
 
+
     private UserService userService;
 
-    @BeforeClass
+    @BeforeGroups(groups = {"smoke","default"})
     private void beforeClass(){
         userService=new UserService();
     }
-@Test
+@Test(groups = {"default"})
     public void shouldGetListOfUsersOfGivenLimit() throws IOException {
     //arrange
     String queryParamName="limit";
@@ -30,7 +32,7 @@ public class GetUsersTest {
     Assert.assertEquals(getUserResponse.getData().size(),10);
     }
 
-    @Test(groups = ("somke"))
+    @Test(groups = {"smoke","default"})
     public void shouldGetListOfUsersUnderTheAccount() throws IOException {
         //arrange
         String queryParamName="created";

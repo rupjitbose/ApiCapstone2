@@ -29,8 +29,10 @@ dependencies {
 }
 
 test {
-    def groups = System.getProperty('groups', 'smoke')
+
+    def groups = System.getProperty('smoke','default')
     useTestNG(){
+        useDefaultListeners = true
         includeGroups groups
     }
     testLogging {
