@@ -5,8 +5,6 @@ import blogs.delete.DeleteBlogPostResponse;
 import blogs.get.GetPostErrorResponse;
 import blogs.get.GetPostResponse;
 import io.restassured.response.Response;
-import users.UserClient;
-import users.get.GetUserResponse;
 
 import java.io.IOException;
 
