@@ -29,7 +29,10 @@ dependencies {
 }
 
 test {
-    useTestNG()
+    def groups = System.getProperty('groups', 'smoke')
+    useTestNG(){
+        includeGroups groups
+    }
     testLogging {
         events "passed", "skipped", "failed"
         showStandardStreams = true

@@ -30,7 +30,7 @@ public class GetUsersTest {
     Assert.assertEquals(getUserResponse.getData().size(),10);
     }
 
-    @Test
+    @Test(groups = ("somke"))
     public void shouldGetListOfUsersUnderTheAccount() throws IOException {
         //arrange
         String queryParamName="created";
